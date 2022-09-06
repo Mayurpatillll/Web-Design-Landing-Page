@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Montserrat;
+    background-image: url('../images/background.svg');
+    background-position: right;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-position-y: bottom 7rem;
+}
+
+.main-div {
+    width: 88vw;
+    margin: 20px 90px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+nav img {
+    height: 2.4rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 13rem;
+}
+
+.nav-item {
+    font-size: .9rem;
+    margin-right: 2rem;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.signin-btn {
+    font-size: 1rem;
+    background: linear-gradient(to right, #965cf2, #ff8adc);
+    border: none;
+    border-radius: .8rem;
+    color: #fff;
+    padding: 0.5rem;
+    width: 7rem;
+}
+
+.signin-btn:hover {
+    cursor: pointer;
+}
+
+
+/* Hero Section */
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section h1 {
+    font-size: 3rem;
+    color: #3e4794;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+.left-section h4 {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 3rem;
+    width: 50%;
+    line-height: 1.8;
+}
+
+.learn-more-btn {
+    border-radius: 2rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #965cf2, #ff8adc);
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    width: 12rem;
+}
+
+.learn-more-btn:hover {
+    cursor: pointer;
+}
+
+
+/* --Images-- */
+
+.vector-img {
+    position: absolute;
+    bottom: 3rem;
+    right: 50vw;
+}
+
+.vector-dot {
+    position: absolute;
+    right: 51vw;
+    bottom: 9rem;
+}
+
+[alt="intro-img"] {
+    height: 38rem;
+    margin-right: 2rem;
+}
+
+
+/* --media query-- */
+
+@media screen and (max-width: 1065px) {
+    body {
+        background: none;
+    }
+    .main-div {
+        width: 88vw;
+        margin: 20px 20px;
+    }
+    .nav {
+        margin: 10px;
+        overflow-x: auto;
+    }
+    .nav-items {
+        display: none;
+    }
+    .signin-btn {
+        margin-left: 4rem;
+    }
+    .intro-section {
+        margin: 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    .left-section h1 {
+        margin-top: 3rem;
+    }
+    .left-section h4 {
+        font-size: 16px;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .vector-dot {
+        position: absolute;
+        left: 20vw;
+        bottom: 9rem;
+    }
+    .vector-img {
+        position: absolute;
+        bottom: 0rem;
+        right: 60vw;
+        height: 7rem;
+    }
+    [alt="intro-img"] {
+        margin-top: 2rem;
+        width: 15rem;
+        height: 20rem;
+        margin-right: 2rem;
+    }
+}
